@@ -1,6 +1,6 @@
 # Succulent Shop
 
-This is a web page layout where I implemented HTML semantic tags, CSS flexbox and some basic Javascript functions.
+This is a web page layout where I implemented **HTML semantic tags, CSS flexbox and some basic Javascript functions**.
 
 ## The challenge
 
