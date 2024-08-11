@@ -1,0 +1,220 @@
+:root {
+    --primary-color: hsl(177.75deg 100% 36.67%);
+    --secondary-color: hsl(179deg 58.82% 80%);
+    --text-color: #171717;
+    --background-color: #fafafa;
+    --border-radius: 5px;
+    --font-family: "Open Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    font-family: var(--font-family);
+}
+
+body {
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box; /* Asegura que el padding se mantenga dentro del ancho */
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+form {
+    flex: 1; /* Permite que el formulario ocupe el espacio disponible */
+    max-width: 100%;
+    border: 2px solid gray;
+    border-radius: 17px;
+    padding: 5px 15px;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.right a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.right img {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    justify-content: space-around;
+    padding: 10px;
+    list-style-type: none;
+    border-bottom: 4px solid var(--text-color);
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.section1 {
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+.section2 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+}
+
+.article1, .article2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.article1 {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    flex: 1;
+}
+
+.article1 p {
+    font-size: 28px;
+    padding: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.divBottom img {
+    width: 40px;
+    height: 40px;
+}
+
+.imgSucculents img {
+    height: 100%;
+    max-width: 100%;
+}
+
+.divBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    margin-top: 20px;
+    height: 100%;
+    padding-left: 30px;
+}
+
+.section3 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los artículos se envuelvan en pantallas más pequeñas */
+    margin: 20px auto;
+    align-items: center;
+    background-color: var(--secondary-color);
+    height: 250px;
+}
+
+.section3 article {
+    flex: 1;
+    text-align: center;
+    font-weight: 400;
+    background-color: var(--secondary-color);
+}
+
+.section3 img {
+    border-radius: 50%;
+    width: 140px;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box; /* Asegura que el padding se mantenga dentro del ancho */
+}
+
+.cookies {
+    width: 100%;
+    background-color: var(--background-color);
+    border: 4px solid var(--text-color);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box; /* Asegura que el padding se mantenga dentro del ancho */
+}
+
+.cookies img {
+    width: 60px;
+    height: 60px;
+}
+
+.cookies p {
+    font-size: 15px;
+    max-width:700px;
+    padding: 5px;
+}
+
+button {
+    border: 3px solid var(--text-color);
+    background-color: var(--primary-color);
+    width: 100px;
+    margin: 10px 0 ;
+    padding: 4px 10px;
+    box-shadow: 3px 3px 2px var(--text-color);
+    cursor: pointer;
+}
